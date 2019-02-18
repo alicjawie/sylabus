@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="admin-main container">
+        <div class="jumbotron">
+            <h2 class="display-4">{{ "YEAR"|trans }}</h2>
+            <hr class="my-4">
+            <div class="table-responsive">
+                <table class="admin-main__table-show table table-stripped">
+                    <thead>
+                        <tr class="table-active">
+                            <th>{{ "ID"|trans }}</th>
+                            <th>{{ "YEAR"|trans }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ year.id|trans }}</td>
+                            <td>{{ year.year }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="button button__row-list button__right">
+                <a href="{{ path('year_index') }}" class="btn btn-dark">{{ "BACK_TO_THE_LIST"|trans }}</a>
+
+                <a href="{{ path('year_edit', { 'id': year.id }) }}" class="btn btn-primary">{{ "EDIT"|trans }}</a>
+
+                {#{{ form_start(delete_form) }}#}
+                {#<input type="submit" class="btn btn-danger" value="Delete">#}
+                {#{{ form_end(delete_form) }}#}
+            </div>
+        </div>
+    </div>
+{% endblock %}

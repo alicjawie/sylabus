@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="admin-main container">
+    <div class="jumbotron">
+        <h2 class="display-4">{{ "SUBCJECT" |trans}}</h2>
+        <hr class="my-4">
+
+<div class="admin-main__subject-info">
+    <div class="table-responsive">
+        <table class="admin-main__table-show table table-stripped">
+            <thead>
+            <tr class="table-active">
+                <th>{{ "ID"|trans }}</th>
+                <th>{{ "NAME"|trans }}</th>
+                <th>{{ "CODE"|trans }}</th>
+                <th>{{ "DESCRIPTION"|trans }}</th>
+            </tr>
+            </thead>
+            <tbody class="admin-main__table-body">
+                <tr>
+                    <td>{{ subject.id }}</td>
+                    <td>{{ subject.name }}</td>
+                    <td>{{ subject.code }}</td>
+                    <td>{{ subject.code }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+        <div class="admin-main__subject-info">
+    {% if subject.numberOfHours %}
+        {% set numberOfHours = subject.numberOfHours %}
+            <h3>{{ "NUMBER_OF_HOURS"|trans }}</h3>
+            <div class="table-responsive">
+                <table class="admin-main__table-show table table-stripped">
+                    <thead>
+                    <tr class="table-active">
+                        <th>{{ "LECTURE"|trans }}</th>
+                        <th>{{ "EXERCISES"|trans }}</th>
+                        <th>{{ "LABORATORIES"|trans }}</th>
+                        <th>{{ "EXERCISES_LABORATORIES"|trans }}</th>
+                        <th>{{ "OWN_WORK"|trans }}</th>
+                        <th>{{ "SUM"|trans }}</th>
+                    </tr>
+                    </thead>
+                    <tbody class="admin-main__table-body">
+                    <tr>
+                        <td>{{ numberOfHours.lecture }}</td>
+                        <td>{{ numberOfHours.exercises }}</td>
+                        <td>{{ numberOfHours.laboratories }}</td>
+                        <td>{{ numberOfHours.exercisesLaboratories }}</td>
+                        <td>{{ numberOfHours.ownWork }}</td>
+                        <td>{{ numberOfHours.sum }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {% endif %}
+    {% if subject.additionalField %}
+        {% set additionalField = subject.additionalField %}
+        <div class="admin-main__subject-info">
+            <h3>{{ "ADDITIONAL_FIELD"|trans }}</h3>
+            <div class="table-responsive">
+                <table class="admin-main__table-show table table-stripped">      
+                    <thead>
+                        <tr class="table-active">
+                            <th>{{ "ECTS"|trans }}</th>
+                            <th>{{ "EXAM"|trans }}</th>
+                        </tr>
+                    </thead>
+                    <tbody class="admin-main__table-body">
+                        <tr>
+                            <td>{{ additionalField.ECTS }}</td>
+                            <td>{{ additionalField.exam }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if subject.extraFields %}
+        <div class="admin-main__subject-info">
+        <h3>{{ "COURSE_CONTENT"|trans }}</h3>
+
+        {% for extraField in subject.extraFields %}
+
+            <h5>{{ extraField.title }}</h5>
+            <div class="col-md-12">{{ extraField.description|raw }}</div>
+        {% endfor %}
+    {% endif %}
+        </div>
+        {% if subject.courseContents %}
+            <div class="admin-main__subject-info">
+            <h3>{{ "LITERATURE"|trans }}</h3>
+
+        {% for course in subject.courseContents %}
+
+            <h5>{{ course.title }}</h5>
+            <div class="col-md-12">{{ course.description|raw }}</div>
+        {% endfor %}
+        {% endif %}
+            </div>
+
+        <div class="button button__row-list button__right">
+            <a href="{{ path('subject_index') }}" class="btn btn-dark">{{ "BACK_TO_THE_LIST"|trans }}</a>
+
+            <a href="{{ path('subject_edit', { 'id': subject.id }) }}"  class="btn btn-primary">{{ "EDIT"|trans }}</a>
+
+            {{ form_start(delete_form) }}
+                <input type="submit" class="btn btn-danger" value="Delete">
+            {{ form_end(delete_form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,433 @@
+NumberOfHours:
+    hours001:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours002:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours003:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours004:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours005:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours006:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours007:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours008:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours009:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours010:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours011:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours012:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours013:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours014:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours015:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours016:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours017:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours018:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours019:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours020:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours021:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours022:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours023:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours024:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours025:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours026:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours027:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours028:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours029:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours030:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours031:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours032:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours033:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours034:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours035:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours036:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours037:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours038:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours039:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours040:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours041:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours042:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours043:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours044:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours045:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours046:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours047:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours048:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours049:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours050:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours051:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours052:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours053:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours054:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours055:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours056:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours057:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours058:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours059:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours060:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours061:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours062:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours063:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours064:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours065:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours066:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~
+    hours067:
+        lecture: 40
+        exercises: 20
+        laboratories: 20
+        exercisesLaboratories: 20
+        ownWork: 20
+    hours068:
+        lecture: 20
+        exercises: 10
+        laboratories: 10
+        exercisesLaboratories: 10
+        ownWork: ~
+    hours069:
+        lecture: 30
+        exercises: 15
+        laboratories: 15
+        exercisesLaboratories: 10
+        ownWork: 5
+    hours070:
+        lecture: 40
+        exercises: 20
+        laboratories: 40
+        exercisesLaboratories: ~
+        ownWork: 20
+    hours071:
+        lecture: 60
+        exercises: ~
+        laboratories: ~
+        exercisesLaboratories: ~
+        ownWork: ~
+    hours072:
+        lecture: 10
+        exercises: 30
+        laboratories: 30
+        exercisesLaboratories: 15
+        ownWork: ~

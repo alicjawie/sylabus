@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<div class="admin-main container">
+    <div class="jumbotron">
+        <h2 class="display-4">{{ "USER" |trans}}</h2>
+        <hr class="my-4">
+        <div class="table-responsive">
+            <table class="admin-main__table-show table table-stripped">
+                <thead class="admin-main__table-head">
+                    <tr class="table-active">
+                        <th>{{ "ID"|trans }}</th>
+                        <th>{{ "USER_NAME"|trans }}</th>
+                        <th>{{ "SURNAME"|trans }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.surname }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button button__row-list button__right">
+            <a class="btn btn-dark" href="{{ path('user_index') }}">{{ "BACK_TO_THE_LIST"|trans }}</a>
+            <a class="btn btn-primary" href="{{ path('user_edit', { 'id': user.id }) }}">{{ "EDIT"|trans }}</a>
+
+                {{ form_start(delete_form) }}
+            <input class="btn btn-danger" type="submit" value="Delete">
+                {{ form_end(delete_form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

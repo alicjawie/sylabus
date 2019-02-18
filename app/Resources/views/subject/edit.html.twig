@@ -1,0 +1,195 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="admin-main container">
+
+    <div class="jumbotron">
+    <h2 class="display-3">{{ "SUBJECT_EDIT"|trans }}</h2>
+    <hr class="my-4">
+
+    <div class="admin-main__form">
+    {{ form_start(edit_form) }}
+        {{ form_row(edit_form.name) }}
+        {{ form_row(edit_form.code) }}
+        {{ form_row(edit_form.description) }}
+        {{ form_row(edit_form.lecturer) }}
+        {{ form_row(edit_form.numberOfHours) }}
+        {{ form_row(edit_form.additionalField) }}
+
+        {{ form_label(edit_form.extraFields) }}
+        {{ form_errors(edit_form.extraFields) }}
+
+        <ul class="admin-main__subject-extra" id="extra-fields-list"
+            data-prototype="{{ form_widget(edit_form.extraFields.vars.prototype)|e }}">
+            {% for extraField in edit_form.extraFields %}
+                <li class="admin-main__subject-extra">
+                    {{ form_errors(extraField) }}
+                    {{ form_widget(extraField) }}
+                </li>
+            {% endfor %}
+        </ul>
+
+        {{ form_label(edit_form.courseContents) }}
+        {{ form_errors(edit_form.courseContents) }}
+
+        <ul class="admin-main__subject-extra" id="course-contents-list"
+            data-prototype="{{ form_widget(edit_form.courseContents.vars.prototype)|e }}">
+            {% for course in edit_form.courseContents %}
+                <li class="admin-main__subject-extra">
+                    {{ form_errors(course) }}
+                    {{ form_widget(course) }}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <div class="button button__row-list button__right">
+        <a href="#" class="btn btn-primary" id="add-extra-field">{{ 'ADD_COURSE_CONTENT'|trans }}</a>
+        <a href="#" class="btn btn-primary" id="add-course-content">{{ 'ADD_LITERATURE'|trans }}</a>
+        </div>
+
+    {{ form_end(edit_form) }}
+
+        <div class="button button__row-list button__right">
+            <a href="{{ path('subject_index') }}" class="btn btn-dark">{{ "BACK_TO_THE_LIST"|trans }}</a>
+
+    {{ form_start(delete_form) }}
+            <input type="submit" class="btn btn-danger" value="{{ "DELETE"|trans }}">
+        </div>
+    {{ form_end(delete_form) }}
+    </div>
+
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+    <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+        var $collectionHolder;
+        var $collectionHolder2;
+
+        var $addLink = $('#add-extra-field');
+        var $addLink2 = $('#add-course-content');
+        var addedCount = 0;
+        var addedCount2 = 0;
+        jQuery(document).ready(function() {
+            CKEDITOR.replace( 'app_bundle_subject_description' );
+
+            $collectionHolder = $('ul#extra-fields-list');
+            $collectionHolder2 = $('ul#course-contents-list');
+
+            $collectionHolder.find('li').each(function() {
+                addFormDeleteLink($(this));
+            });
+
+            $collectionHolder2.find('li').each(function() {
+                addFormDeleteLink2($(this));
+            });
+
+            $collectionHolder.data('index', $collectionHolder.find(':input').length);
+            $collectionHolder2.data('index', $collectionHolder2.find(':input').length);
+
+            $addLink.on('click', function(e) {
+                e.preventDefault();
+
+                addForm($collectionHolder);
+            });
+
+            $addLink2.on('click', function(e) {
+                e.preventDefault();
+
+                addForm2($collectionHolder2);
+            });
+
+            $('input[type="submit"]').on('click', function (e) {
+                for (var key in CKEDITOR.instances) {
+                    if (!CKEDITOR.instances.hasOwnProperty(key)) continue;
+
+                    var obj = CKEDITOR.instances[key];
+                    obj.getData()
+
+                }
+                return true;
+            });
+        });
+
+        function addForm($collectionHolder) {
+            var prototype = $collectionHolder.data('prototype');
+
+            var index = $collectionHolder.data('index');
+
+            var newForm = prototype;
+            newForm = newForm.replace(/__name__/g, index);
+
+            $collectionHolder.data('index', index + 1);
+
+            var $newFormLi = $('<li></li>').append(newForm);
+            $collectionHolder.append($newFormLi);
+
+            addFormDeleteLink($newFormLi);
+
+            var name = 'app_bundle_subject[extraFields][' + index + '][description]';
+            CKEDITOR.replace(name);
+        }
+
+        function addForm2($collectionHolder2) {
+            var prototype = $collectionHolder2.data('prototype');
+
+            var index = $collectionHolder2.data('index');
+
+            var newForm = prototype;
+            newForm = newForm.replace(/__name__/g, index);
+
+            $collectionHolder2.data('index', index + 1);
+
+            var $newFormLi = $('<li></li>').append(newForm);
+            $collectionHolder2.append($newFormLi);
+
+            addFormDeleteLink2($newFormLi);
+
+            var name = 'app_bundle_subject[courseContents][' + index + '][description]';
+            CKEDITOR.replace(name);
+        }
+
+        function addFormDeleteLink($formLi) {
+            var $removeFormA = $('<a href="#" class="btn btn-danger button button__between">{{ "DELETE"|trans }}</a>');
+            $formLi.append($removeFormA);
+
+            var index = $collectionHolder.data('index');
+            var name = 'app_bundle_subject[extraFields][' + (index -1) + '][description]';
+            if(index === undefined) {
+                name = 'app_bundle_subject[extraFields][' + addedCount + '][description]';
+            }
+
+            addedCount++;
+            CKEDITOR.replace(name);
+
+            $removeFormA.on('click', function(e) {
+                e.preventDefault();
+
+                $formLi.remove();
+            });
+        }
+        function addFormDeleteLink2($formLi) {
+            var $removeFormA = $('<a href="#" class="btn btn-danger button button__between">{{ "DELETE"|trans }}</a>');
+            $formLi.append($removeFormA);
+
+            var index = $collectionHolder2.data('index');
+            var name = 'app_bundle_subject[courseContents][' + (index -1) + '][description]';
+            if(index === undefined) {
+                name = 'app_bundle_subject[courseContents][' + addedCount2 + '][description]';
+            }
+
+            addedCount2++;
+            CKEDITOR.replace(name);
+
+            $removeFormA.on('click', function(e) {
+                e.preventDefault();
+
+                $formLi.remove();
+            });
+        }
+
+    </script>
+
+{% endblock %}

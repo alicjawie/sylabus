@@ -1,0 +1,217 @@
+AdditionalField:
+    field001:
+        ECTS: 12
+        exam: true
+    field002:
+        ECTS: 8
+        exam: true
+    field003:
+        ECTS: 16
+        exam: true
+    field004:
+        ECTS: 15
+        exam: true
+    field005:
+        ECTS: 20
+        exam: false
+    field006:
+        ECTS: 0
+        exam: false
+    field007:
+        ECTS: 12
+        exam: true
+    field008:
+        ECTS: 8
+        exam: true
+    field009:
+        ECTS: 16
+        exam: true
+    field010:
+        ECTS: 15
+        exam: true
+    field011:
+        ECTS: 20
+        exam: false
+    field012:
+        ECTS: 0
+        exam: false
+    field013:
+        ECTS: 12
+        exam: true
+    field014:
+        ECTS: 8
+        exam: true
+    field015:
+        ECTS: 16
+        exam: true
+    field016:
+        ECTS: 15
+        exam: true
+    field017:
+        ECTS: 20
+        exam: false
+    field018:
+        ECTS: 0
+        exam: false
+    field019:
+        ECTS: 12
+        exam: true
+    field020:
+        ECTS: 8
+        exam: true
+    field021:
+        ECTS: 16
+        exam: true
+    field022:
+        ECTS: 15
+        exam: true
+    field023:
+        ECTS: 20
+        exam: false
+    field024:
+        ECTS: 0
+        exam: false
+    field025:
+        ECTS: 12
+        exam: true
+    field026:
+        ECTS: 8
+        exam: true
+    field027:
+        ECTS: 16
+        exam: true
+    field028:
+        ECTS: 15
+        exam: true
+    field029:
+        ECTS: 20
+        exam: false
+    field030:
+        ECTS: 0
+        exam: false
+    field031:
+        ECTS: 12
+        exam: true
+    field032:
+        ECTS: 8
+        exam: true
+    field033:
+        ECTS: 16
+        exam: true
+    field034:
+        ECTS: 15
+        exam: true
+    field035:
+        ECTS: 20
+        exam: false
+    field036:
+        ECTS: 0
+        exam: false
+    field037:
+        ECTS: 12
+        exam: true
+    field038:
+        ECTS: 8
+        exam: true
+    field039:
+        ECTS: 16
+        exam: true
+    field040:
+        ECTS: 15
+        exam: true
+    field041:
+        ECTS: 20
+        exam: false
+    field042:
+        ECTS: 0
+        exam: false
+    field043:
+        ECTS: 12
+        exam: true
+    field044:
+        ECTS: 8
+        exam: true
+    field045:
+        ECTS: 16
+        exam: true
+    field046:
+        ECTS: 15
+        exam: true
+    field047:
+        ECTS: 20
+        exam: false
+    field048:
+        ECTS: 0
+        exam: false
+    field049:
+        ECTS: 12
+        exam: true
+    field050:
+        ECTS: 8
+        exam: true
+    field051:
+        ECTS: 16
+        exam: true
+    field052:
+        ECTS: 15
+        exam: true
+    field053:
+        ECTS: 20
+        exam: false
+    field054:
+        ECTS: 0
+        exam: false
+    field055:
+        ECTS: 12
+        exam: true
+    field056:
+        ECTS: 8
+        exam: true
+    field057:
+        ECTS: 16
+        exam: true
+    field058:
+        ECTS: 15
+        exam: true
+    field059:
+        ECTS: 20
+        exam: false
+    field060:
+        ECTS: 0
+        exam: false
+    field061:
+        ECTS: 12
+        exam: true
+    field062:
+        ECTS: 8
+        exam: true
+    field063:
+        ECTS: 16
+        exam: true
+    field064:
+        ECTS: 15
+        exam: true
+    field065:
+        ECTS: 20
+        exam: false
+    field066:
+        ECTS: 0
+        exam: false
+    field067:
+        ECTS: 12
+        exam: true
+    field068:
+        ECTS: 8
+        exam: true
+    field069:
+        ECTS: 16
+        exam: true
+    field070:
+        ECTS: 15
+        exam: true
+    field071:
+        ECTS: 20
+        exam: false
+    field072:
+        ECTS: 0
+        exam: false

@@ -1,0 +1,161 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="admin-main container">
+
+    <div class="jumbotron">
+        <h2 class="display-3">{{ "SUBCJECT_CREATION"|trans }}</h2>
+        <hr class="my-4">
+
+    {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.code) }}
+        {{ form_row(form.description) }}
+        {{ form_row(form.lecturer) }}
+
+        {{ form_label(form.extraFields) }}
+        {{ form_errors(form.extraFields) }}
+
+        <ul id="extra-fields-list"
+            data-prototype="{{ form_widget(form.extraFields.vars.prototype)|e }}">
+        </ul>
+        <div class="button button__left button__between">
+            <a class="btn btn-success" href="#" id="add-extra-field">{{ 'ADD_COURSE_CONTENT'|trans }}</a>
+        </div>
+
+        {{ form_label(form.courseContents) }}
+        {{ form_errors(form.courseContents) }}
+
+        <ul id="course-contents-list"
+            data-prototype="{{ form_widget(form.courseContents.vars.prototype)|e }}">
+        </ul>
+        <div class="button button__left button__between">
+        <a class="btn btn-success" href="#" id="add-course-content">{{ 'ADD_LITERATURE'|trans }}</a>
+        </div>
+
+        {{ form_row(form.numberOfHours) }}
+        {{ form_row(form.additionalField) }}
+
+
+        <div class="button button__column-list button__right">
+            <input type="submit" class="btn btn-primary" value={{ 'CREATE'|trans }} />
+            <a href="{{ path('subject_index') }}" class="btn btn-dark">{{ "BACK_TO_THE_LIST"|trans }}</a>
+        </div>
+    {{ form_end(form) }}
+
+
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+    <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+        var $collectionHolder;
+        var $addLink = $('#add-extra-field');
+        var $addLink2 = $('#add-course-content');
+
+        jQuery(document).ready(function() {
+            CKEDITOR.replace( 'app_bundle_subject_description' );
+
+            $collectionHolder = $('ul#extra-fields-list');
+            $collectionHolder2 = $('ul#course-contents-list');
+
+            $collectionHolder.data('index', $collectionHolder.find(':input').length);
+            $collectionHolder2.data('index', $collectionHolder2.find(':input').length);
+
+            $collectionHolder.find('li').each(function() {
+                addFormDeleteLink($(this));
+            });
+
+            $collectionHolder2.find('li').each(function() {
+                addFormDeleteLink2($(this));
+            });
+
+            $addLink.on('click', function(e) {
+                e.preventDefault();
+
+                addForm($collectionHolder);
+            });
+
+            $addLink2.on('click', function(e) {
+                e.preventDefault();
+
+                addForm2($collectionHolder2);
+            });
+
+            $('input[type="submit"]').on('click', function (e) {
+                for (var key in CKEDITOR.instances) {
+                    if (!CKEDITOR.instances.hasOwnProperty(key)) continue;
+
+                    var obj = CKEDITOR.instances[key];
+                    obj.getData()
+
+                }
+                return true;
+            });
+
+        });
+
+        function addForm($collectionHolder) {
+            var prototype = $collectionHolder.data('prototype');
+            var index = $collectionHolder.data('index');
+
+            var newForm = prototype;
+            newForm = newForm.replace(/__name__/g, index);
+
+            $collectionHolder.data('index', index + 1);
+
+            var $newFormLi = $('<div></div>').append(newForm);
+            $collectionHolder.append($newFormLi);
+
+            addFormDeleteLink($newFormLi);
+
+            var name = 'app_bundle_subject[extraFields][' + index + '][description]';
+            CKEDITOR.replace(name);
+        }
+
+        function addForm2($collectionHolder2) {
+            var prototype = $collectionHolder2.data('prototype');
+
+            var index = $collectionHolder2.data('index');
+
+            var newForm = prototype;
+            newForm = newForm.replace(/__name__/g, index);
+
+            $collectionHolder2.data('index', index + 1);
+
+            var $newFormLi = $('<li></li>').append(newForm);
+            $collectionHolder2.append($newFormLi);
+
+            addFormDeleteLink2($newFormLi);
+
+            var name = 'app_bundle_subject[courseContents][' + index + '][description]';
+            CKEDITOR.replace(name);
+        }
+
+
+        function addFormDeleteLink($formLi) {
+            var $removeFormA = $('<a href="#" class="btn btn-danger button button__between">{{ "DELETE"|trans }}</a>');
+            $formLi.append($removeFormA);
+
+            $removeFormA.on('click', function(e) {
+                e.preventDefault();
+
+                $formLi.remove();
+            });
+        }
+
+        function addFormDeleteLink2($formLi) {
+            var $removeFormA = $('<a href="#" class="btn btn-danger button button__between">{{ "DELETE"|trans }}</a>');
+            $formLi.append($removeFormA);
+
+            $removeFormA.on('click', function(e) {
+                e.preventDefault();
+
+                $formLi.remove();
+            });
+        }
+
+    </script>
+
+{% endblock %}

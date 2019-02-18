@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="admin-main container">
+    <div class="jumbotron">
+        <h2 class="display-4">{{ "SUBCJECT" |trans}}</h2>
+        <hr class="my-4">
+        <div class="button button__right">
+            <a class="button btn btn-warning" href="{{ path('subject_detail_show_pdf', {'id': subject.id}) }}">{{ 'GENERATE_PDF'|trans }}</a>
+        </div>
+        <div class="table-responsive">
+            <table class="admin-main__table-show table table-stripped">
+                <thead>
+                <tr class="table-active">
+                    <th>{{ "ID"|trans }}</th>
+                    <th>{{ "NAME"|trans }}</th>
+                    <th>{{ "CODE"|trans }}</th>
+                    <th>{{ "LECTURER"|trans }}</th>
+                    <th>{{ "DESCRIPTION"|trans }}</th>
+                </tr>
+                </thead>
+                <tbody class="admin-main__table-body">
+                <tr>
+                    <td>{{ subject.id }}</td>
+                    <td>{{ subject.name }}</td>
+                    <td>{{ subject.code }}</td>
+                    <td>{{ subject.lecturer }}</td>
+                    <td>{{ subject.code }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    {% if subject.numberOfHours %}
+        {% set numberOfHours = subject.numberOfHours %}
+            <h3 class="subject__title">{{ "NUMBER_OF_HOURS"|trans }}</h3>
+            <div class="table-responsive">
+                <table class="admin-main__table-show table table-stripped">
+                    <thead>
+                    <tr class="table-active">
+                        <th>{{ "LECTURE"|trans }}</th>
+                        <th>{{ "EXERCISES"|trans }}</th>
+                        <th>{{ "LABORATORIES"|trans }}</th>
+                        <th>{{ "EXERCISES_LABORATORIES"|trans }}</th>
+                        <th>{{ "OWN_WORK"|trans }}</th>
+                        <th>{{ "SUM"|trans }}</th>
+                    </tr>
+                    </thead>
+                    <tbody class="admin-main__table-body">
+                    <tr>
+                        <td>{{ numberOfHours.lecture }}</td>
+                        <td>{{ numberOfHours.exercises }}</td>
+                        <td>{{ numberOfHours.laboratories }}</td>
+                        <td>{{ numberOfHours.exercisesLaboratories }}</td>
+                        <td>{{ numberOfHours.ownWork }}</td>
+                        <td>{{ numberOfHours.sum }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    {% endif %}
+    {% if subject.additionalField %}
+        {% set additionalField = subject.additionalField %}
+        <h3 class="subject__title">{{ "ADDITIONAL_FIELD"|trans }}</h3>
+        <div class="table-responsive">
+            <table class="admin-main__table-show table table-stripped">
+                <thead>
+                <tr class="table-active">
+                    <th>{{ "ECTS"|trans }}</th>
+                    <th>{{ "EXAM"|trans }}</th>
+                </tr>
+                </thead>
+                <tbody class="admin-main__table-body">
+                <tr>
+                    <td>{{ additionalField.ECTS }}</td>
+                    <td>{{ additionalField.exam }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+
+        <h3 class="subject__title">{{ "COURSE_CONTENT"|trans }}</h3>
+    {% for extraField in subject.extraFields %}
+        <div class="subject__title">{{ extraField.title }}</div>
+            <div class="col-md-12">{{ extraField.description|raw }}</div>
+    {% endfor %}
+
+        <h3 class="subject__title">{{ "LITERATURE"|trans }}</h3>
+        {% for course in subject.courseContents %}
+        <div class="subject__title">{{ course.author}}</div>
+        <div class="subject__title">{{ course.title}}</div>
+        <div class="col-md-12">{{ course.description|raw }}</div>
+    {% endfor %}
+        {#<ul>#}
+        {#<li>#}
+            {#{% if subject.fieldOfStudy %}#}
+            {#<a href="{{ path('subject_home_list', {'fieldOfStudy': subject.fieldOfStudy.id}) }}">{{ "BACK_TO_THE_LIST"|trans }}</a>#}
+            {#{% endif %}#}
+        {#</li>#}
+    {#</ul>#}
+    </div>
+</div>
+{% endblock %}

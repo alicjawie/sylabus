@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="admin-main container">
+
+    <div class="jumbotron">
+        <h2 class="display-4">{{ "DEGREE_CREATION"|trans }}</h2>
+        <hr class="my-4">
+    
+        {{ form_start(form) }}
+            {{ form_row(form.name) }}
+            {{ form_row(form.enabled) }}
+        
+        <div class="button button__column-list button__right">
+                <input type="submit" class="btn btn-primary" value="{{ 'CREATE'|trans }}" />
+                <a href="{{ path('degree_index') }}" class="btn btn-dark">{{ "BACK_TO_THE_LIST"|trans }}</a>
+            </div>
+        {{ form_end(form) }}
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="admin-main container">
+
+    <div class="jumbotron">
+        <h2 class="display-4">{{ "FIELD_OF_STUDY_EDIT"|trans }}</h2>
+        <hr class="my-4">
+
+     
+            {{ form_start(edit_form) }}
+                {{ form_row(edit_form.name) }}
+                {{ form_row(edit_form.mode) }}
+                {{ form_row(edit_form.degree) }}
+                {{ form_row(edit_form.year) }}
+                {{ form_row(edit_form.language) }}
+                <div class="button button__row-list button__right">
+                <input type="submit" value="Edit" class="btn btn-primary" />
+            {{ form_end(edit_form) }} 
+
+        
+
+            <a href="{{ path('field-of-study_index') }}" class="btn btn-dark">{{ "BACK_TO_THE_LIST"|trans }}</a>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Usuń" class="btn btn-danger">
+            {{ form_end(delete_form) }}
+            
+        </div>
+    </div>
+
+</div>
+{% endblock %}

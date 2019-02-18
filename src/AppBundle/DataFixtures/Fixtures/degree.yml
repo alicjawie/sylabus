@@ -1,0 +1,10 @@
+Degree:
+    degree001:
+        name: 'magister'
+        fieldOfStudies: ['field-of-study001']
+    degree002:
+        name: 'licencjat'
+        fieldOfStudies: ['field-of-study002']
+    degree003:
+        name: 'inżynier'
+        fieldOfStudies: []

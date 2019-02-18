@@ -1,0 +1,425 @@
+Semester:
+    semester001:
+        yearOfStudy: 1
+        type: "winter"
+        fieldOfStudyType: "field-of-study001"
+        subjects:
+            - "subject001"
+            - "subject002"
+            - "subject003"
+            - "subject015"
+            
+    semester002:
+        yearOfStudy: 1
+        type: "summer"
+        fieldOfStudyType: "field-of-study001"
+        subjects:
+            - "subject004"
+            - "subject005"
+            - "subject006"
+            - "subject016"
+            
+    semester003:
+        yearOfStudy: 2
+        type: "winter"
+        fieldOfStudyType: "field-of-study001"
+        subjects:
+            - "subject007"
+            - "subject008"
+            - "subject017"
+    semester004:
+        yearOfStudy: 2
+        type: "summer"
+        fieldOfStudyType: "field-of-study001"
+        subjects:
+            - "subject009"
+            - "subject010"
+    semester005:
+        yearOfStudy: 3
+        type: "winter"
+        fieldOfStudyType: "field-of-study001"
+        subjects:
+            - "subject011"
+            - "subject012"
+    semester006:
+        yearOfStudy: 3
+        type: "summer"
+        fieldOfStudyType: "field-of-study001"
+        subjects:
+            - "subject013"
+            - "subject014"
+
+    semester007:
+        yearOfStudy: 1
+        type: "winter"
+        fieldOfStudyType: "field-of-study002"
+        subjects:
+            - "subject018"
+            - "subject019"
+            - "subject020"
+            - "subject032"
+            
+    semester008:
+        yearOfStudy: 1
+        type: "summer"
+        fieldOfStudyType: "field-of-study002"
+        subjects:
+            - "subject021"
+            - "subject022"
+            - "subject023"
+            - "subject033"
+            
+    semester009:
+        yearOfStudy: 2
+        type: "winter"
+        fieldOfStudyType: "field-of-study002"
+        subjects:
+            - "subject024"
+            - "subject025"
+            - "subject034"
+    semester010:
+        yearOfStudy: 2
+        type: "summer"
+        fieldOfStudyType: "field-of-study002"
+        subjects:
+            - "subject026"
+            - "subject027"
+    semester011:
+        yearOfStudy: 3
+        type: "winter"
+        fieldOfStudyType: "field-of-study002"
+        subjects:
+            - "subject028"
+            - "subject029"
+    semester012:
+        yearOfStudy: 3
+        type: "summer"
+        fieldOfStudyType: "field-of-study002"
+        subjects:
+            - "subject031"
+            - "subject032"
+    semester013:
+        yearOfStudy: 4
+        type: "winter"
+        fieldOfStudyType: "field-of-study002"
+        subjects:
+            - "subject035"
+            - "subject036"
+    semester014:
+        yearOfStudy: 1
+        type: "winter"
+        fieldOfStudyType: "field-of-study003"
+        subjects:
+            - "subject001"
+            - "subject002"
+            - "subject003"
+            - "subject015"
+
+    semester015:
+        yearOfStudy: 1
+        type: "summer"
+        fieldOfStudyType: "field-of-study003"
+        subjects:
+            - "subject004"
+            - "subject005"
+            - "subject006"
+            - "subject016"
+
+    semester016:
+        yearOfStudy: 2
+        type: "winter"
+        fieldOfStudyType: "field-of-study003"
+        subjects:
+            - "subject007"
+            - "subject008"
+            - "subject017"
+    semester017:
+        yearOfStudy: 2
+        type: "summer"
+        fieldOfStudyType: "field-of-study003"
+        subjects:
+            - "subject009"
+            - "subject010"
+    semester018:
+        yearOfStudy: 3
+        type: "winter"
+        fieldOfStudyType: "field-of-study003"
+        subjects:
+            - "subject011"
+            - "subject012"
+    semester019:
+        yearOfStudy: 3
+        type: "summer"
+        fieldOfStudyType: "field-of-study003"
+        subjects:
+            - "subject013"
+            - "subject014"
+
+    semester020:
+        yearOfStudy: 1
+        type: "winter"
+        fieldOfStudyType: "field-of-study004"
+        subjects:
+            - "subject018"
+            - "subject019"
+            - "subject020"
+            - "subject032"
+
+    semester021:
+        yearOfStudy: 1
+        type: "summer"
+        fieldOfStudyType: "field-of-study004"
+        subjects:
+            - "subject021"
+            - "subject022"
+            - "subject023"
+            - "subject033"
+
+    semester022:
+        yearOfStudy: 2
+        type: "winter"
+        fieldOfStudyType: "field-of-study004"
+        subjects:
+            - "subject024"
+            - "subject025"
+            - "subject034"
+    semester023:
+        yearOfStudy: 2
+        type: "summer"
+        fieldOfStudyType: "field-of-study004"
+        subjects:
+            - "subject026"
+            - "subject027"
+    semester024:
+        yearOfStudy: 3
+        type: "winter"
+        fieldOfStudyType: "field-of-study004"
+        subjects:
+            - "subject028"
+            - "subject029"
+    semester025:
+        yearOfStudy: 3
+        type: "summer"
+        fieldOfStudyType: "field-of-study004"
+        subjects:
+            - "subject031"
+            - "subject032"
+    semester026:
+        yearOfStudy: 4
+        type: "winter"
+        fieldOfStudyType: "field-of-study004"
+        subjects:
+            - "subject035"
+            - "subject036"
+    semester027:
+        yearOfStudy: 1
+        type: "winter"
+        fieldOfStudyType: "field-of-study005"
+        subjects:
+            - "subject001"
+            - "subject002"
+            - "subject003"
+            - "subject015"
+
+    semester028:
+        yearOfStudy: 1
+        type: "summer"
+        fieldOfStudyType: "field-of-study005"
+        subjects:
+            - "subject004"
+            - "subject005"
+            - "subject006"
+            - "subject016"
+
+    semester029:
+        yearOfStudy: 2
+        type: "winter"
+        fieldOfStudyType: "field-of-study005"
+        subjects:
+            - "subject007"
+            - "subject008"
+            - "subject017"
+    semester030:
+        yearOfStudy: 2
+        type: "summer"
+        fieldOfStudyType: "field-of-study005"
+        subjects:
+            - "subject009"
+            - "subject010"
+    semester031:
+        yearOfStudy: 3
+        type: "winter"
+        fieldOfStudyType: "field-of-study005"
+        subjects:
+            - "subject011"
+            - "subject012"
+    semester032:
+        yearOfStudy: 3
+        type: "summer"
+        fieldOfStudyType: "field-of-study005"
+        subjects:
+            - "subject013"
+            - "subject014"
+
+    semester033:
+        yearOfStudy: 1
+        type: "winter"
+        fieldOfStudyType: "field-of-study006"
+        subjects:
+            - "subject018"
+            - "subject019"
+            - "subject020"
+            - "subject032"
+
+    semester034:
+        yearOfStudy: 1
+        type: "summer"
+        fieldOfStudyType: "field-of-study006"
+        subjects:
+            - "subject021"
+            - "subject022"
+            - "subject023"
+            - "subject033"
+
+    semester035:
+        yearOfStudy: 2
+        type: "winter"
+        fieldOfStudyType: "field-of-study006"
+        subjects:
+            - "subject024"
+            - "subject025"
+            - "subject034"
+    semester036:
+        yearOfStudy: 2
+        type: "summer"
+        fieldOfStudyType: "field-of-study006"
+        subjects:
+            - "subject026"
+            - "subject027"
+    semester037:
+        yearOfStudy: 3
+        type: "winter"
+        fieldOfStudyType: "field-of-study006"
+        subjects:
+            - "subject028"
+            - "subject029"
+    semester038:
+        yearOfStudy: 3
+        type: "summer"
+        fieldOfStudyType: "field-of-study006"
+        subjects:
+            - "subject031"
+            - "subject032"
+    semester039:
+        yearOfStudy: 4
+        type: "winter"
+        fieldOfStudyType: "field-of-study006"
+        subjects:
+            - "subject035"
+            - "subject036"
+    semester040:
+        yearOfStudy: 1
+        type: "winter"
+        fieldOfStudyType: "field-of-study007"
+        subjects:
+            - "subject037"
+            - "subject038"
+            - "subject039"
+            - "subject040"
+
+    semester041:
+        yearOfStudy: 1
+        type: "summer"
+        fieldOfStudyType: "field-of-study007"
+        subjects:
+            - "subject041"
+            - "subject042"
+            - "subject043"
+            - "subject044"
+
+    semester042:
+        yearOfStudy: 2
+        type: "winter"
+        fieldOfStudyType: "field-of-study007"
+        subjects:
+            - "subject045"
+            - "subject046"
+            - "subject047"
+    semester043:
+        yearOfStudy: 2
+        type: "summer"
+        fieldOfStudyType: "field-of-study007"
+        subjects:
+            - "subject048"
+            - "subject049"
+    semester044:
+        yearOfStudy: 3
+        type: "winter"
+        fieldOfStudyType: "field-of-study007"
+        subjects:
+            - "subject050"
+            - "subject051"
+    semester045:
+        yearOfStudy: 3
+        type: "summer"
+        fieldOfStudyType: "field-of-study007"
+        subjects:
+            - "subject052"
+            - "subject053"
+
+    semester046:
+        yearOfStudy: 1
+        type: "winter"
+        fieldOfStudyType: "field-of-study008"
+        subjects:
+            - "subject054"
+            - "subject055"
+            - "subject056"
+            - "subject057"
+
+    semester047:
+        yearOfStudy: 1
+        type: "summer"
+        fieldOfStudyType: "field-of-study008"
+        subjects:
+            - "subject058"
+            - "subject059"
+            - "subject060"
+            - "subject061"
+
+    semester048:
+        yearOfStudy: 2
+        type: "winter"
+        fieldOfStudyType: "field-of-study008"
+        subjects:
+            - "subject062"
+            - "subject063"
+            - "subject064"
+    semester049:
+        yearOfStudy: 2
+        type: "summer"
+        fieldOfStudyType: "field-of-study008"
+        subjects:
+            - "subject065"
+            - "subject066"
+    semester050:
+        yearOfStudy: 3
+        type: "winter"
+        fieldOfStudyType: "field-of-study008"
+        subjects:
+            - "subject067"
+            - "subject068"
+    semester051:
+        yearOfStudy: 3
+        type: "summer"
+        fieldOfStudyType: "field-of-study008"
+        subjects:
+            - "subject069"
+            - "subject070"
+    semester052:
+        yearOfStudy: 4
+        type: "winter"
+        fieldOfStudyType: "field-of-study008"
+        subjects:
+            - "subject071"
+            - "subject072"

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PDF</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: left;
+            table-layout: fixed
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        table tr:nth-child(even) {
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+<h1>{{ "SUBCJECT" |trans}}</h1>
+
+<table>
+    <tbody>
+    <tr>
+        <th>Id</th>
+        <td>{{ subject.id }}</td>
+    </tr>
+    <tr>
+        <th>{{ "NAME"|trans }}</th>
+        <td>{{ subject.name }}</td>
+    </tr>
+    <tr>
+        <th>{{ "CODE"|trans }}</th>
+        <td>{{ subject.code }}</td>
+    </tr>
+    <tr>
+        <th>{{ "LECTURER"|trans }}</th>
+        <td>{{ subject.lecturer }}</td>
+    </tr>
+    <tr>
+        <th>{{ "DESCRIPTION"|trans }}</th>
+        <td>{{ subject.description | raw}}</td>
+    </tr>
+    </tbody>
+</table>
+{% if subject.numberOfHours %}
+    {% set numberOfHours = subject.numberOfHours %}
+    <h3>{{ "NUMBER_OF_HOURS"|trans }}</h3>
+    <table>
+        <tbody>
+        <tr>
+            <th>{{ "LECTURE"|trans }}</th>
+            <td>{{ numberOfHours.lecture }}</td>
+        </tr>
+        <tr>
+            <th>{{ "EXERCISES"|trans }}</th>
+            <td>{{ numberOfHours.exercises }}</td>
+        </tr>
+        <tr>
+            <th>{{ "LABORATORIES"|trans }}</th>
+            <td>{{ numberOfHours.laboratories }}</td>
+        </tr>
+        <tr>
+            <th>{{ "EXERCISES_LABORATORIES"|trans }}</th>
+            <td>{{ numberOfHours.exercisesLaboratories }}</td>
+        </tr>
+        <tr>
+            <th>{{ "OWN_WORK"|trans }}</th>
+            <td>{{ numberOfHours.ownWork }}</td>
+        </tr>
+        <tr>
+            <th>{{ "SUM"|trans }}</th>
+            <td>{{ numberOfHours.sum }}</td>
+        </tr>
+        </tbody>
+    </table>
+{% endif %}
+{% if subject.additionalField %}
+    {% set additionalField = subject.additionalField %}
+    <h3>{{ "ADDITIONAL_FIELD"|trans }}</h3>
+    <table>
+        <tbody>
+        <tr>
+            <th>{{ "ECTS"|trans }}</th>
+            <td>{{ additionalField.ECTS }}</td>
+        </tr>
+        <tr>
+            <th>{{ "EXAM"|trans }}</th>
+            <td>{{ additionalField.exam }}</td>
+        </tr>
+        </tbody>
+    </table>
+{% endif %}
+
+<h3 class="subject__title">{{ "COURSE_CONTENT"|trans }}</h3>
+{% for extraField in subject.extraFields %}
+    <div class="subject__title"><strong>{{ extraField.title }}:</strong> {{ extraField.description|raw }}</div>
+{% endfor %}
+
+<h3 class="subject__title">{{ "LITERATURE"|trans }}</h3>
+{% for course in subject.courseContents %}
+    <div class="subject__title"><strong>{{ course.author}}</strong> {{ course.title}}</div>
+    <div class="col-md-12">{{ course.description|raw }}</div>
+{% endfor %}
+
+</body>
+</html>

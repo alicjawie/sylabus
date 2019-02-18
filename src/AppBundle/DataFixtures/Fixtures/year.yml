@@ -1,0 +1,21 @@
+Year:
+    year001:
+        year: '2016/2017'
+        fieldOfStudies:
+            - 'field-of-study001'
+            - 'field-of-study002'
+    year002:
+        year: '2017/2018'
+        fieldOfStudies:
+            - 'field-of-study003'
+            - 'field-of-study004'
+    year003:
+        year: '2018/2019'
+        fieldOfStudies:
+            - 'field-of-study005'
+            - 'field-of-study006'
+    year004:
+        year: '2019/2020'
+        fieldOfStudies:
+            - 'field-of-study007'
+            - 'field-of-study008'

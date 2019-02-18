@@ -1,0 +1,169 @@
+FIELD_OF_STUDY_LIST: Field of study list
+FIELD_OF_STUDY: Field of study
+HOMEPAGE: Home
+HELP: Help
+LOGOUT: Logout
+LOGIN: Login
+
+#Basis
+ID: Id
+NAME: Name
+MODE: Mode
+DEGREE: Degree
+DEGREE_EDIT: Degree edit
+DEGREES_LIST: Degrees list
+DEGREE_CREATION: Degree creation
+YEAR: Year
+LANGUAGE: Language
+ACTIONS: Actions
+MENU: Menu
+ADD: Add
+SHOW: Show
+EDIT: Edit
+TYPE: Type
+DELETE: Delete
+SUBCJECT: Subject
+SUBCJECT: Subjects
+SEMESTER: Semester
+SEARCH: Search
+DESCRIPTION: Description
+FULL_TIME_STUDIES: Full-time studies
+PART_TIME_STUDY: Part-time study
+CHOOSE_YEAR: Choose year
+ACTIVE: Active
+ENABLE: Enable
+DISABLE: Disabled
+LINK: Link
+USOS: USOS
+OLAT: OLAT
+FACULTY_PAGE: Faculty page
+COLLEGE_WEBSITE: College website
+AUTHORS: Authors
+CONTACT: contact
+HELP: Help
+ACADEMIC_YEAR: Academic Year
+TITLE: Title
+HOME: Home
+LOG_IN: Log in
+DIRECTIONS: directions
+SOMETHING: something
+CREATEDAT: Created at
+MODIFIEDAT: Modified at
+EXTRAFIELD: Extrafield
+YEAR_OF_STUDY: Year of study
+EXTRAFIELD_EDIT: Extrafield edit
+EXTRAFIELD_CREATION: Extrafield creation
+TOGGLE_NAVIGATION: Toggle navigation
+CHANGES_SAVED: Your changes were saved!
+CHANGES_DELETED: Your changes were deleted!
+CHANGES_CAN_NOT__BE_SAVE: An error occurred while saving
+CHANGES_CAN_NOT__BE_EDIT: An error occurred while editing
+ADD_EXTRA_FIELD: Add extra field
+CREATE_A_NEW_EXTRAFIELD: Create a new extrafield
+ADDITIONAL_FIELD: Additional informations
+
+#Field of study mode
+MODE_FULL_TIME: Full time
+MODE_EXTRAMURAL: Extramural
+MODE_EVENING: Evening
+
+#Field of Study commands
+FIELD_OF_STUDY_TYPE: Field of study type
+FIELD_OF_STUDY_EDIT: Field of study - Edit
+FIELDOFSTUDY.ID: Field of study ID
+FIELDOFSTUDY.NAME: Field of study name
+FIELDOFSTUDY.MODE: Field of study mode
+FIELDOFSTUDY.DEGREE: Field of study degree
+FIELDOFSTUDY.YEAR: Field of study year
+FIELDOFSTUDY.LANGUAGE: Field of study language
+FIELD_OF_STUDY_TYPE: Field of study TYPE
+FIELDOFSTUDYTYPECREATION: Field of study creation
+ADD_FIELD_OF_STUDY: Add field of study
+DELETE_FIELD_OF_STUDY: Delete field of study
+YEAROFSTUDY: Year
+FIELD_OF_STUDY_TYPE: Field type
+
+#Semester commands
+SEMESTER.ID: Semster id - lista
+SEMESTER.YEAROFSTUDY: SEMESTER YEAR OF STUDY
+SEMESTER.TYPE: SEMESTER.TYPE
+SEMESTER.FIELDOFSTYDYTYPE: SEMESTER FIELD OF STYDY TYPE
+SEMESTER_EDIT: SEMESTER EDIT
+SEMESTER_LIST: Semester list
+
+
+#Subcject commands
+SUBJECT_LIST: Subjects list
+ADD_SUBJECT: Add subcjet
+DELETE SUBJECT: Delete subject
+DELETE_FIELD_OF_STUDY: Delete field of study
+ACADEMIC_YEAR: Academic year
+ADD_ACADEMIC_YEAR: Add academic year
+DELETE_ACADEMIC_YEAR: Delete academic year
+ASSIGN_SUBCJECT: Assign subject
+SUBJECT_EDIT: Subject edit
+BACK_TO_THE_LIST: Back to the list
+SUBCJECT_CREATION: Subject creation
+CREATE_A_NEW_SUBCJECT: Create a new subject
+CREATE_A_NEW_DEGREE: Create a new degree
+CHOOSE_THE_ACTION_YOU_WANT_TO_TAKE: Choose the action you want to take
+SEARCH_FOR_AN_SUBJECT_OR_CHOOSE_A_DIRECTION_FROM_THE_LIST: Search for a subject or choose a direction from the list
+PROGRAM_OF_DIDACTIC_CLASSES_OF_THE_FACULTY_OF_MATHEMATICS_AND_COMPUTER_SCIENCE: Program of didactic classes of the faculty of mathematics and computer science
+LECTURE: Lecture
+EXERCISES: Exercises
+LABORATORIES: Laboratories
+EXERCISES_LABORATORIES: Exercises Laboratories
+OWN_WORK: Own work
+SUM: Sum
+ECTS: ECTS
+EXAM: Exam
+CODE: Code
+
+#Subcjet
+MATH: Math
+INFORMATICS: Informatics
+TEACHING_MATHS_AND_COMPUTER_SCIENCE: Teaching Math and Computer Science
+ANALYSIS_AND_DATA_PROCESSING: Analysis and Data Processing
+NUMBER_OF_HOURS: Number of hours
+
+
+MODE_FULL_TIME: Full Time
+MODE_EXTRAMURAL: Extramural
+LANGUAGE: Language
+LIST: List
+SUBJECT: Subject
+USER: User
+ENABLED: Active
+CREATE: Create
+SEMESTER_CREATION: Semester creation
+FIELD_OF_STUDY2: Field of study
+SUMMER_TYPE: Summer type
+WINTER_TYPE: Winter type
+USER_CREATION: User creation
+USER_LIST: User List
+CREATE_A_NEW_USER: Create a new user
+USER_EXISTS: User exists
+USERNAME: Username
+NAME2: Name
+SURNAME: Surname
+INDEX: Index number
+EMAIL: E-mail
+PASSWORD: Password
+ECTS: ECTS
+YES: Yes
+NO: No
+USER_NOT_FOUND_IN_SYLLABUS_SYSTEM: User not found in Syllabus system!
+
+#koza
+YEAR: Year
+YEAR_EDIT: Edit the year
+YEAR_CREATION: Create a new year
+YEAR_LIST: List of years
+USER_EDIT: Edit the user
+LECTURER: Lecturer
+COURSE_CONTENT: Course content
+LITERATURE: Literature
+ADD_LITERATURE: Add a literature
+ADD_COURSE_CONTENT: Add a curse content
+AUTHOR: Author
+WITAJ_W_SYLABUSIE_WMI: Welcome

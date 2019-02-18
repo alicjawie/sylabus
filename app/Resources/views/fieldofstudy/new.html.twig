@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="admin-main container">
+
+    <div class="jumbotron">
+        <h2 class="display-4">{{ "FIELDOFSTUDYTYPECREATION"|trans }}</h2>
+
+    <p class="lead">{{ "ADD_SUBJECT"|trans }}</p>
+    <hr class="my-4">
+
+    {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.mode) }}
+        {{ form_row(form.degree) }}
+        {{ form_row(form.year) }}
+        {{ form_row(form.language) }}
+        <div class="button button__column-list button__right">
+            <a href="" class="btn btn-primary" role="CREATE">{{ "ADD"|trans }}</a>
+            <a href="{{ path('field-of-study_index') }}" class="btn btn-dark">{{ "BACK_TO_THE_LIST"|trans }}</a>
+        </div>
+    {{ form_end(form) }}
+
+        
+
+    </div>
+</div>
+{% endblock %}

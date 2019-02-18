@@ -1,0 +1,73 @@
+User:
+    user:
+        username: 'user'
+        name: 'User'
+        surname: 'Pomson'
+        index: '333'
+        email: 'user@syllabus.com'
+        password: 'password'
+        roles: ["ROLE_USER"]
+    admin:
+        username: 'admin'
+        name: 'Admin'
+        surname: 'Wąsik'
+        index: '123'
+        email: 'admin@syllabus.com'
+        password: 'password'
+        roles: ["ROLE_ADMIN"]
+    dawklu:
+        username: 'dawklu@st.amu.edu.pl'
+        name: 'Dawid'
+        surname: 'Kluczyk'
+        index: '467250'
+        email: 'dawklu@st.amu.edu.pl'
+        password: 'password'
+        roles: ["ROLE_ADMIN"]
+    aliwie2:
+        username: 'aliwie2@st.amu.edu.pl'
+        name: 'Alicja'
+        surname: 'Wierzbicka'
+        index: '467295'
+        email: 'aliwie2@st.amu.edu.pl'
+        password: 'password'
+        roles: ["ROLE_ADMIN"]
+    dartyc:
+        username: 'dartyc@st.amu.edu.pl'
+        name: 'Dariusz'
+        surname: 'Tyczyński'
+        index: '467290'
+        email: 'dartyc@st.amu.edu.pl'
+        password: 'password'
+        roles: ["ROLE_ADMIN"]
+    micsob5:
+        username: 'micsob5@st.amu.edu.pl'
+        name: 'Michał'
+        surname: 'Sobolewski'
+        index: '467282'
+        email: 'micsob5@st.amu.edu.pl'
+        password: 'password'
+        roles: ["ROLE_SUPER_ADMIN"]
+    dr85864:
+        username: 'dr85864@st.amu.edu.pl'
+        name: 'Dawid'
+        surname: 'Rogozik'
+        index: '427160'
+        email: 'dr85864@st.amu.edu.pl'
+        password: 'password'
+        roles: ["ROLE_SUPER_ADMIN"]
+    blakmi:
+        username: 'blakmi@st.amu.edu.pl'
+        name: 'Błażej'
+        surname: 'Kmieć'
+        index: '467251'
+        email: 'blakmi@st.amu.edu.pl'
+        password: 'password'
+        roles: ["ROLE_SUPER_ADMIN"]
+    pilka:
+        username: 'pilka@amu.edu.pl'
+        name: 'Tomasz Kazimierz'
+        surname: 'Piłka'
+        index: '34334'
+        email: 'pilka@amu.edu.pl'
+        password: 'password'
+        roles: ["ROLE_SUPER_ADMIN"]

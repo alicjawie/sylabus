@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="admin-main container">
+        <div class="jumbotron">
+            <h2 class="display-4">{{ "WITAJ_W_SYLABUSIE_WMI" |trans}}</h2>
+            <hr class="my-4">
+            <div>
+                <p>Wyszukaj przedmiot, który Cię interesuje lub wybierz kierunek z listy kierunków na stronie głównej.</p>
+                <p>Zaloguj się aby zobaczyć swoje przedmioty lub zarządzać bazą danych (tylko dla administratorów).</p>
+                <p>Aby zmienić język wybierz "PL" lub "ENG" w nagłówku strony.</p>
+               <div class="wmi-img offset-md-6 col-md-6 col-12">
+                   <img id="svg_wmi" class="img-responsive" src="{{ asset('bundles/app/img/wmi-logo.svg') }}">
+               </div>
+           </div>
+        </div>
+
+    </div>
+
+{% endblock %}

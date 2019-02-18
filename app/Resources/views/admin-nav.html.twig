@@ -1,0 +1,260 @@
+<div class="pos-f-t admin-nav__mobile">
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h4 class="text-white admin-nav__title">{{ "MENU"|trans }}</h4>
+            <div class="panel-group admin-nav__elements">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title admin-nav__item admin-nav__item--title">
+                            <a class="text-muted" data-toggle="collapse" href="#collapse12">{{ "SUBJECT"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+                        </h6>
+                    </div>
+                    <div id="collapse12" class="panel-collapse collapse">
+                        <ul class="user-main__list list-group">
+                            <li class="admin-nav__item admin-nav__item--link">
+                                <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('subject_new') }}">{{ "ADD"|trans }}
+                                </a>
+                            </li>
+                            <li class="admin-nav__item admin-nav__item--link">
+                                <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('subject_index') }}">{{ "LIST"|trans }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel-heading">
+                    <h6 class="panel-title admin-nav__item admin-nav__item--title">
+                        <a class="text-muted" data-toggle="collapse" href="#collapse13">{{ "FIELD_OF_STUDY"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+                    </h6>
+                </div>
+                <div id="collapse13" class="panel-collapse collapse">
+                    <ul class="user-main__list list-group">
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('field-of-study_new') }}">
+                                {{ "ADD"|trans }}
+                            </a>
+                        </li>
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('field-of-study_index') }}">
+                                {{ "LIST"|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="panel-heading">
+                    <h6 class="panel-title admin-nav__item admin-nav__item--title">
+                        <a class="text-muted" data-toggle="collapse" href="#collapse14">{{ "ACADEMIC_YEAR"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+                    </h6>
+                </div>
+                <div id="collapse14" class="panel-collapse collapse">
+                    <ul class="user-main__list list-group">
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('year_new') }}">
+                                {{ "ADD"|trans }}
+                            </a>
+                        </li>
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('year_index') }}">
+                                {{ "LIST"|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="panel-heading">
+                    <h6 class="panel-title admin-nav__item admin-nav__item--title">
+                        <a class="text-muted" data-toggle="collapse" href="#collapse15">{{ "DEGREE"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+                    </h6>
+                </div>
+                <div id="collapse15" class="panel-collapse collapse">
+                    <ul class="user-main__list list-group">
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('degree_new') }}">
+                                {{ "ADD"|trans }}
+                            </a>
+                        </li>
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('degree_index') }}">
+                                {{ "LIST"|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="panel-heading">
+                    <h6 class="panel-title admin-nav__item admin-nav__item--title">
+                        <a class="text-muted" data-toggle="collapse" href="#collapse16">{{ "SEMESTER"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+                    </h6>
+                </div>
+                <div id="collapse16" class="panel-collapse collapse">
+                    <ul class="user-main__list list-group">
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('semester_new') }}">
+                                {{ "ADD"|trans }}
+                            </a>
+                        </li>
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('semester_index') }}">
+                                {{ "LIST"|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="panel-heading">
+                    <h6 class="panel-title admin-nav__item admin-nav__item--title">
+                        <a class="text-muted" data-toggle="collapse" href="#collapse17">{{ "USER"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+                    </h6>
+                </div>
+                <div id="collapse17" class="panel-collapse collapse">
+                    <ul class="user-main__list list-group">
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('user_new') }}">
+                                {{ "ADD"|trans }}
+                            </a>
+                        </li>
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="list-group-item bg-dark text-muted list-group-item-secondary" href="{{ path('user_index') }}">
+                                {{ "LIST"|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="col-md-3 col-sm-12 admin-nav navbar-dark bg-dark">
+  
+    <h4 class="admin-nav__title text-white">{{ "MENU"|trans }}</h4>
+
+     <div class="panel-group admin-nav__elements">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h6 class="panel-title admin-nav__item admin-nav__item--title">
+                  <a class="text-muted" data-toggle="collapse" href="#collapse2">{{ "SUBJECT"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+                  </h6>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                    <ul class="user-main__list list-group">
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="bg-dark  text-muted list-group-item list-group-item-secondary" href="{{ path('subject_new') }}">{{ "ADD"|trans }}
+                            </a>
+                        </li>
+                        <li class="admin-nav__item admin-nav__item--link">
+                            <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('subject_index') }}">{{ "LIST"|trans }}
+                            </a>
+                        </li>
+                    </ul>
+              </div>
+          </div>
+
+               <div class="panel-heading">
+                 <h6 class="panel-title admin-nav__item admin-nav__item--title">
+                   <a class="text-muted" data-toggle="collapse" href="#collapse3">{{ "FIELD_OF_STUDY"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+                 </h6>
+               </div>
+               <div id="collapse3" class="panel-collapse collapse">
+                 <ul class="user-main__list list-group">
+                   <li class="admin-nav__item admin-nav__item--link">
+                     <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('field-of-study_new') }}">
+                         {{ "ADD"|trans }}
+                     </a>
+                   </li>
+                   <li class="admin-nav__item admin-nav__item--link">
+                     <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('field-of-study_index') }}">
+                         {{ "LIST"|trans }}
+                     </a>
+                   </li>
+                 </ul>
+               </div>
+
+       <div class="panel-heading">
+         <h6 class="panel-title admin-nav__item admin-nav__item--title">
+           <a class="text-muted" data-toggle="collapse" href="#collapse4">{{ "ACADEMIC_YEAR"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+         </h6>
+       </div>
+       <div id="collapse4" class="panel-collapse collapse">
+         <ul class="user-main__list list-group">
+           <li class="admin-nav__item admin-nav__item--link">
+             <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('year_new') }}">
+                 {{ "ADD"|trans }}
+             </a>
+           </li>
+             <li class="admin-nav__item admin-nav__item--link">
+                 <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('year_index') }}">
+                     {{ "LIST"|trans }}
+                 </a>
+             </li>
+         </ul>
+       </div>
+
+       <div class="panel-heading">
+         <h6 class="panel-title admin-nav__item admin-nav__item--title">
+           <a class="text-muted" data-toggle="collapse" href="#collapse5">{{ "DEGREE"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+         </h6>
+       </div>
+       <div id="collapse5" class="panel-collapse collapse">
+         <ul class="user-main__list list-group">
+           <li class="admin-nav__item admin-nav__item--link">
+             <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('degree_new') }}">
+                 {{ "ADD"|trans }}
+             </a>
+           </li>
+           <li class="admin-nav__item admin-nav__item--link">
+             <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('degree_index') }}">
+                 {{ "LIST"|trans }}
+             </a>
+           </li>
+         </ul>
+       </div>
+
+       <div class="panel-heading">
+         <h6 class="panel-title admin-nav__item admin-nav__item--title">
+           <a class="text-muted" data-toggle="collapse" href="#collapse6">{{ "SEMESTER"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+         </h6>
+       </div>
+       <div id="collapse6" class="panel-collapse collapse">
+         <ul class="user-main__list list-group">
+           <li class="admin-nav__item admin-nav__item--link">
+             <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('semester_new') }}">
+                 {{ "ADD"|trans }}
+             </a>
+           </li>
+           <li class="admin-nav__item admin-nav__item--link">
+             <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('semester_index') }}">
+                 {{ "LIST"|trans }}
+             </a>
+           </li>
+         </ul>
+       </div>
+
+       <div class="panel-heading">
+         <h6 class="panel-title admin-nav__item admin-nav__item--title">
+           <a class="text-muted" data-toggle="collapse" href="#collapse7">{{ "USER"|trans }}<i class="fa fa-angle-down admin-nav__icon" aria-hidden="true"></i></a>
+         </h6>
+       </div>
+       <div id="collapse7" class="panel-collapse collapse">
+         <ul class="user-main__list list-group">
+           <li class="admin-nav__item admin-nav__item--link">
+             <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('user_new') }}">
+                 {{ "ADD"|trans }}
+             </a>
+           </li>
+           <li class="admin-nav__item admin-nav__item--link">
+             <a class="bg-dark text-muted list-group-item list-group-item-secondary" href="{{ path('user_index') }}">
+                 {{ "LIST"|trans }}
+             </a>
+           </li>
+         </ul>
+       </div>
+     </div>
+</nav>

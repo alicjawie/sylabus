@@ -1,0 +1,31 @@
+<nav class="nav navbar navbar-dark bg-dark">
+  <nav class="nav__container container nav-container">
+
+    <nav class="nav__items">
+
+      <span class="nav__link-lang">
+        <a class="nav__link" href="{{ path('set_language', {'locale': 'pl'}) }}"><img class="nav__img" src="{{ asset('bundles/app/img/flag-poland.jpg') }}" /><span>pl</span></a>
+        <a class="nav__link" href="{{ path('set_language', {'locale': 'en'}) }}"><img class="nav__img" src="{{ asset('bundles/app/img/british-flag.png') }}" /><span>eng</span></a>
+      </span>
+
+      <span class="nav__link-item">
+        <a class="nav__link" href="{{ path('homepage') }}"><i class="fa fa-home" aria-hidden="true"></i><span>{{ "HOME"|trans }}</span></a>
+        <a class="nav__link" href="{{ path('help') }}"><i class="fa fa-info-circle" aria-hidden="true"></i><span> {{ "HELP"|trans }}</span></a>
+
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        <a class="nav__link nav__link--login" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>
+          <span>{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |</span>
+          </a>
+          <a class="nav__link" href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out" aria-hidden="true"></i>
+            <span>{{ "LOGOUT"|trans }}</span>
+                </a>
+            {% else %}
+          <a class="nav__link" href="{{ path('fos_user_security_login') }}"><i class="fa fa-user-circle" aria-hidden="true"></i><span>{{ "LOGIN"|trans }}</span></a>
+        {% endif %}
+
+      </span>
+    </nav>
+
+  </nav>
+
+  </nav> 

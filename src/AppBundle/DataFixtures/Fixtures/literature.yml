@@ -1,0 +1,121 @@
+Literature:
+    literature001:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject001"
+    literature002:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject001"
+    literature003:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject002"
+    literature004:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject002"
+    literature005:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject003"
+    literature006:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject003"
+    literature007:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject004"
+    literature008:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject004"
+    literature009:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject005"
+    literature010:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject005"
+    literature011:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject006"
+    literature012:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject006"
+    literature013:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject007"
+    literature014:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject007"
+    literature015:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject008"
+    literature016:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject008"
+    literature017:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject009"
+    literature018:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject009"
+    literature019:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject010"
+    literature020:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject010"
+    literature021:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject011"
+    literature022:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject011"
+    literature023:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject012"
+    literature024:
+        author: "Andrzej Wajda"
+        title: "Zarys algebry"
+        description: "<p>Biblioteka Matematyczna t.  63.</p>"
+        subject: "subject012"

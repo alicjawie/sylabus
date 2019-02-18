@@ -1,0 +1,97 @@
+Course:
+    content001:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject001"
+    content002:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject001"
+    content003:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject002"
+    content004:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject002"
+    content005:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject003"
+    content006:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject003"
+    content007:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject004"
+    content008:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject004"
+    content009:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject005"
+    content010:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject005"
+    content011:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject006"
+    content012:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject006"
+    content013:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject007"
+    content014:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject007"
+    content015:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject008"
+    content016:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject008"
+    content017:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject009"
+    content018:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject009"
+    content019:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject010"
+    content020:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject010"
+    content021:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject011"
+    content022:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject011"
+    content023:
+        title: "GRUPY ABELOWE WOLNE"
+        description: "<p>zbiory wolnych generatorów, ranga, podgrupy</p>"
+        subject: "subject012"
+    content024:
+        title: "SKONCZENIE GENEROWANE GRUPY ABELOWE"
+        description: "<p>rozkład na sumę prostą grup cyklicznych, niezmienniki, typ.</p>"
+        subject: "subject012"

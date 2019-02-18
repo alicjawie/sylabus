@@ -1,0 +1,93 @@
+FieldOfStudy:
+    study001:
+        name: "mathematics"
+        mode: "MODE_FULL_TIME"
+        language: "PL"
+        semesters:
+            - "semester001"
+            - "semester002"
+            - "semester003"
+            - "semester004"
+            - "semester005"
+            - "semester006"
+    study002:
+        name: "informatics"
+        mode: "MODE_EXTRAMURAL"
+        language: "ENG"
+        semesters:
+            - "semester007"
+            - "semester008"
+            - "semester009"
+            - "semester010"
+            - "semester011"
+            - "semester012"
+            - "semester013"
+    study003:
+        name: "mathematics"
+        mode: "MODE_FULL_TIME"
+        language: "PL"
+        semesters:
+            - "semester014"
+            - "semester015"
+            - "semester016"
+            - "semester017"
+            - "semester018"
+            - "semester019"
+    study004:
+        name: "informatics"
+        mode: "MODE_EXTRAMURAL"
+        language: "ENG"
+        semesters:
+            - "semester020"
+            - "semester021"
+            - "semester022"
+            - "semester023"
+            - "semester024"
+            - "semester025"
+            - "semester026"
+    study005:
+        name: "mathematics"
+        mode: "MODE_FULL_TIME"
+        language: "PL"
+        semesters:
+            - "semester027"
+            - "semester028"
+            - "semester029"
+            - "semester030"
+            - "semester031"
+            - "semester032"
+    study006:
+        name: "informatics"
+        mode: "MODE_EXTRAMURAL"
+        language: "ENG"
+        semesters:
+            - "semester033"
+            - "semester034"
+            - "semester035"
+            - "semester036"
+            - "semester037"
+            - "semester038"
+            - "semester039"
+    study007:
+        name: "mathematics"
+        mode: "MODE_FULL_TIME"
+        language: "PL"
+        semesters:
+            - "semester040"
+            - "semester041"
+            - "semester042"
+            - "semester043"
+            - "semester044"
+            - "semester045"
+    study008:
+        name: "informatics"
+        mode: "MODE_EXTRAMURAL"
+        language: "ENG"
+        semesters:
+            - "semester046"
+            - "semester047"
+            - "semester048"
+            - "semester049"
+            - "semester050"
+            - "semester051"
+            - "semester052"

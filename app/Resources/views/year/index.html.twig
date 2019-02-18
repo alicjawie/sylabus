@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="admin-main container">
+
+    <div class="jumbotron">
+
+        <h2 class="display-4">{{ "YEAR_LIST"|trans }}</h2>
+        <p class="lead">{{ "CHOOSE_THE_ACTION_YOU_WANT_TO_TAKE"|trans }}</p>
+        <hr class="my-4">
+        <div class="table-responsive">
+            <table class="admin-main__table-show table table-stripped">
+            <thead class="thead-dark">
+            <tr>
+                <th>{{ "ID"|trans }}</th>
+                <th>{{ "YEAR"|trans }}</th>
+                <th>{{ "ACTIONS"|trans }}</th>
+            </tr>
+            </thead>
+            <tbody class="admin-main__table-body">
+            {% for year in years %}
+                <tr>
+                    <td>
+                        <a href="{{ path('year_show', { 'id': year.id }) }}">{{ year.id }}</a>
+                    </td>
+                    <td>{{ year.year }}</td>
+                    <td class="icons">
+
+                        <a href="{{ path('year_show', { 'id': year.id }) }}">
+                            <i class="fa fa-eye icon icon__show" aria-hidden="true"></i>
+                        </a>
+                        <a href="{{ path('year_edit', { 'id': year.id }) }}">
+                            <i class="fa fa-pencil-square-o icon icon__edit" aria-hidden="true"></i>
+                        </a>
+
+                    </td>
+                </tr>
+            {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="button button__right">
+            <a href="{{ path('year_new') }}" class="btn btn-primary" role="CREATE">{{ "ADD"|trans }}</a>
+        </div>
+
+    </div>
+
+
+</div>
+{% endblock %}

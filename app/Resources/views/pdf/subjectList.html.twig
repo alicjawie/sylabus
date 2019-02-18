@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PDF</title>
+    <style>
+        .table_pdf {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .table_pdf th {
+            background-color: #4a4b4c;
+            color: #ffffff
+        }
+
+        .nth-table tr:nth-child(even) {
+
+            background: #eaeaea;
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <div >
+        <h2>{{ "SUBJECT_LIST"|trans }} - {{ fieldOfStudy.name }}</h2>
+        <p >{{ "CHOOSE_THE_ACTION_YOU_WANT_TO_TAKE"|trans }}</p>
+        <hr >
+        {% for semester in fieldOfStudy.semesters %}
+            <h3>{{ 'SEMESTER' }}: {{ semester.yearOfStudy }}</h3>
+            <table class="table_pdf nth-table">
+                <thead class="admin-main__table-head thead-dark">
+                <tr>
+                    <th>{{ "ID"|trans }}</th>
+                    <th>{{ "NAME"|trans }}</th>
+                    <th>{{ "CODE"|trans }}</th>
+                    <th>{{ 'LECTURE'|trans }}</th>
+                    <th>{{ 'EXERCISES'|trans }}</th>
+                    <th>{{ 'LABORATORIES'|trans }}</th>
+                    <th>{{ 'EXERCISES_LABORATORIES'|trans }}</th>
+                    <th>{{ 'OWN_WORK'|trans }}</th>
+                    <th>{{ 'SUM'|trans }}</th>
+                    <th>{{ 'ECTS'|trans }}</th>
+                    <th>{{ 'EXAM'|trans }}</th>
+                </tr>
+                </thead>
+                <tbody class="admin-main__table-body">
+                {% for subject in semester.subjects %}
+                    {% if(semester.fieldOfStudy) %}
+                        {% if semester.fieldOfStudy.id == fieldOfStudy.id %}
+                            <tr>
+                                <td>{{ subject.id }}</td>
+                                <td>{{ subject.name }}</td>
+                                <td>{{ subject.code }}</td>
+                                <td>{% if subject.numberOfHours %}{{ subject.numberOfHours.lecture }}{% endif %}</td>
+                                <td>{% if subject.numberOfHours %}{{ subject.numberOfHours.exercises }}{% endif %}</td>
+                                <td>{% if subject.numberOfHours %}{{ subject.numberOfHours.laboratories }}{% endif %}</td>
+                                <td>{% if subject.numberOfHours %}{{ subject.numberOfHours.exercisesLaboratories }}{% endif %}</td>
+                                <td>{% if subject.numberOfHours %}{{ subject.numberOfHours.ownWork }}{% endif %}</td>
+                                <td>{% if subject.numberOfHours %}{{ subject.numberOfHours.sum }}{% endif %}</td>
+                                <td>{% if subject.additionalField %}{{ subject.additionalField.ECTS }}{% endif %}</td>
+                                <td>{% if subject.additionalField %}{{ subject.additionalField.exam }}{% endif %}</td>
+                            </tr>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <!-- Enable responsiveness on mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>{% block title %}Syllabus 2.0{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset ('bundles/app/css/font-awesome-4.7.0/css/font-awesome.min.css') }}"/>
+        <link rel="stylesheet" href="{{ asset ('bundles/app/css/bootstrap.min.css') }}" type="text/css" />
+        <link href="{{ asset ('bundles/app/css/style.css') }}" type="text/css" rel="stylesheet" />
+       
+
+        
+        {% block stylesheets %}
+        {% endblock %}
+
+        <script src="{{ asset ('bundles/app/js/jquery-3.2.1.min.js') }}"></script>
+        <script src="{{ asset ('bundles/app/js/popper.min.js') }}"></script>
+        <script src="{{ asset ('bundles/app/js/bootstrap.min.js') }}"></script>
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {{ include('nav.html.twig', sandboxed = true) }}
+        <div class="space"></div>
+        {{ include('header.html.twig', sandboxed = true) }}
+        <div class="space"></div>
+
+        
+        {% for message in app.flashes('notice') %}
+            <div class="alert alert-notice">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        {% for label, messages in app.flashes(['warning', 'error', 'success']) %}
+            {% for message in messages %}
+                <div class="alert alert-{{ (label == 'error')?'danger':label }}" style="text-align: center">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+         <div class="admin-main__content container">
+             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                 {{ include('admin-nav.html.twig', sandboxed = true) }}
+             {% endif %}
+
+             {% block body %}
+             {% endblock %}
+             {% block javascripts %}
+             {% endblock %}
+        </div>
+
+
+        <div class="space"></div>
+        {{ include('footer.html.twig', sandboxed = true) }}
+        <!-- Latest compiled and minified JavaScript -->
+    </body>
+</html>

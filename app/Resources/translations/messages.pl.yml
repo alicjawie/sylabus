@@ -1,0 +1,166 @@
+FIELD_OF_STUDY_LIST: Lista kierunków studiów
+FIELD_OF_STUDY: Kierunki studiów
+HOMEPAGE: Strona główna
+HELP: Pomoc
+LOGOUT: Wyloguj
+LOGIN: Zaloguj
+
+#Podstawa
+ID: Id
+NAME: Nazwa
+MODE: Tryb
+DEGREE: Stopień
+DEGREE_EDIT: Edytuj stopień
+DEGREES_LIST: Lista stopni
+DEGREE_CREATION: Stwórz stopień
+YEAR: Rok
+LANGUAGE: Język
+ACTIONS: Akcja
+MENU: Menu
+ADD: Dodaj
+SHOW: Pokaż
+EDIT: Edytuj
+TYPE: Rodzaj
+DELETE: Usuń
+SUBCJECT: Przemiot
+SUBCJECTS: Przemioty
+SEMESTER: Semestr
+SEARCH: Szukaj
+USER: Użytkownik
+DESCRIPTION: Opis
+FULL_TIME_STUDIES: Studia stacjonarne
+PART_TIME_STUDY: Studia niestacjonarne
+CHOOSE_YEAR: Wybierz rok
+ACTIVE: Aktywny
+ENABLE: Włączyć
+DISABLE: Nieaktywny
+LINK: Link
+USOS: USOS
+OLAT: OLAT
+FACULTY_PAGE: Strona wydziału
+COLLEGE_WEBSITE: Strona uczelni
+AUTHORS: Autorzy
+CONTACT: Kontakt
+HELP: Pomoc
+ACADEMIC_YEAR: Rok akademicki
+TITLE: Tytuł
+HOME: strona główna
+LOG_IN: Zaloguj
+DIRECTIONS: Kierunki
+SOMETHING: Coś
+CREATEDAT: Kiedy stworzone
+MODIFIEDAT: Kiedy modyfikowane
+EXTRAFIELD: Dodatkowe pole
+EXTRAFIELD_EDIT: Dodatkowe edytowanie pola
+YEAR_OF_STUDY: Rok studiów
+EXTRAFIELD_CREATION: Dodatkowe tworzenie pól
+TOGGLE_NAVIGATION: Przełącz nawigację
+CHANGES_SAVED: Twoje zmiany zostały zapisane!
+CHANGES_DELETED: Twoje zmiany zostały usunięte!
+CHANGES_ERROR: Wystąpił błąd przy zapisie!
+CHANGES_CAN_NOT__BE_EDIT: Wystąpił błąd podczas edytowania!
+ADD_EXTRA_FIELD: Dodaj dodatkowe pole
+CREATE_A_NEW_EXTRAFIELD: Utwórz nowe dodatkowe pole
+ADDITIONAL_FIELD: Dodatkowe informacje
+
+#Field of study mode
+MODE_FULL_TIME: Dzienne
+MODE_EXTRAMURAL: Zaoczne
+MODE_EVENING: Wieczorowe
+
+#Komendy Kierunek
+FIELD_OF_STUDY_EDIT: Kierunek - edycja
+FIELDOFSTUDY.ID: Kierunki id
+FIELDOFSTUDY.NAME: Nazwa kierunku
+FIELDOFSTUDY.MODE: Tryb kierunku
+FIELDOFSTUDY.DEGREE: Stopień kierunku - lista
+FIELDOFSTUDY.YEAR: Rok kierunku - lista
+FIELDOFSTUDY.LANGUAGE: Jezyk kierunku
+FIELD_OF_STUDY_TYPE: Typ Kierunków
+FIELDOFSTUDYTYPE: Typ studiów
+FIELDOFSTUDYTYPECREATION: Stwórz kierunek studiów
+ADD_FIELD_OF_STUDY: Dodaj kierunek
+DELETE_FIELD_OF_STUDY: Usuń kierunek
+YEAROFSTUDY: Rok studiów
+
+#Komendy Semestr
+SEMESTER.ID: Semestr id
+SEMESTER.YEAROFSTUDY: Roku studiow semestr
+SEMESTER.TYPE: Typ semestru
+SEMESTER.FIELDOFSTYDYTYPE: Typ studiów semestr
+SEMESTER_EDIT: Edytuj semestr
+SEMESTER_LIST: Lista semestrów
+
+#Komendy Przedmiot
+SUBJECT_LIST: Lista przedmiotów
+ADD_SUBJECT: Dodaj przedmiot
+DELETE SUBJECT: Usuń przedmiot
+DELETE_FIELD_OF_STUDY: Usuń kierunki
+ADD_ACADEMIC_YEAR: Dodaj rok akademicki
+DELETE_ACADEMIC_YEAR: Usuń rok akademicki
+ASSIGN_SUBCJECT: Przypisz przedmiot
+SUBJECT_EDIT: Edytuj przedmiot
+BACK_TO_THE_LIST: Powrót do listy
+SUBCJECT_CREATION: Stwórz przedmiot
+CREATE_A_NEW_SUBCJECT: Stwórz nowy przedmiot
+CREATE_A_NEW_DEGREE: Stwórz nowy stopień
+CHOOSE_THE_ACTION_YOU_WANT_TO_TAKE: Wybierz akcję jaką chcesz wykonać
+SEARCH_FOR_AN_SUBJECT_OR_CHOOSE_A_DIRECTION_FROM_THE_LIST: Wyszukaj przedmiot lub wybierz kierunek z listy
+PROGRAM_OF_DIDACTIC_CLASSES_OF_THE_FACULTY_OF_MATHEMATICS_AND_COMPUTER_SCIENCE: Program zajęć dydaktycznych wydziału Matematyki i Informatyki
+LECTURE: Wykład
+EXERCISES: Ćwiczenia
+LABORATORIES: Laboratoria
+EXERCISES_LABORATORIES: Ćwiczenia laboratoryjne
+OWN_WORK: Praca własna
+SUM: Suma godzin
+ECTS: ECTS
+EXAM: Egzamin
+CODE: Kod
+NUMBER_OF_HOURS: Liczba godzin
+
+
+#Przedmioty
+MATH: Matematyka
+INFORMATICS: Informatyka
+TEACHING_MATHS_AND_COMPUTER_SCIENCE: Nauczanie matematyki i informatyki
+ANALYSIS_AND_DATA_PROCESSING: Analiza i przetwarzanie danych
+LANGUAGE: Język
+LIST: Lista
+SUBJECT: Przedmiot
+NAME: Nazwa
+CODE: Kod
+DESCRIPTION: Opis
+ENABLED: Aktywny
+CREATE: Stwórz
+SEMESTER_CREATION: Tworzenie semestru
+FIELD_OF_STUDY2: Kierunek studiów
+SUMMER_TYPE: Semestr letni
+WINTER_TYPE: Semestr ziomwy
+USER_CREATION: Tworzenie użytkowinków
+USER_LIST: Lista użytkowników
+CREATE_A_NEW_USER: Stwórz nowego użytkownika
+USER_EXISTS: Użytkowik istnieje
+USERNAME: Nazwa użytkownika
+NAME2: Imię
+SURNAME: Nazwisko
+INDEX: Numer indeksu
+EMAIL: E-mail
+PASSWORD: Hasło
+ECTS: ECTS
+YES: Tak
+NO: Nie
+USER_NOT_FOUND_IN_SYLLABUS_SYSTEM: Użytkownik nie znaleziony w systemie Syllabus!
+
+#koza
+YEAR: Rok
+YEAR_EDIT: Edytuj rok
+YEAR_CREATION: Stwórz nowy rok
+YEAR_LIST: Lista lat
+USER_EDIT: Edycja użytkownika
+LECTURER: Prowadzący
+COURSE_CONTENT: Treści kształcenia
+LITERATURE: Literatura
+ADD_LITERATURE: Dodaj literature
+ADD_COURSE_CONTENT: Dodaj treść kształcenia
+AUTHOR: Autor
+WITAJ_W_SYLABUSIE_WMI: Witaj w Sylabusie WMI

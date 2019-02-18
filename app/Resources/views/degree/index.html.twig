@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<div class="admin-main container">
+
+    <div class="jumbotron">
+    <h2 class="display-4">{{ "DEGREES_LIST"|trans }}</h2>
+    <p class="lead">{{ "CHOOSE_THE_ACTION_YOU_WANT_TO_TAKE"|trans }}</p>
+    <hr class="my-4">
+    <div class="table-responsive">
+        <table class="admin-main__table table table-hover table-stripped">
+                <thead class="admin-main__table-head thead-dark">
+                <tr>
+                    <th>{{ "NAME"|trans }}</th>
+                    <th>{{  "ID"|trans }}</th>
+                    <th>{{ "ENABLED"|trans }}</th>
+                    <th>{{ "CREATEDAT"|trans }}</th>
+                    <th>{{ "MODIFIEDAT"|trans }}</th>
+                    <th>{{ "ACTIONS"|trans }}</th>
+                </tr>
+            </thead>
+            <tbody class="admin-main__table-body">
+            {% for degree in degrees %}
+                <tr>
+                    <td><a href="{{ path('degree_show', { 'id': degree.id }) }}">{{ degree.name }}</a></td>
+                    <td>{{ degree.id }}</td>
+                    <td>{% if degree.enabled %}Yes{% else %}No{% endif %}</td>
+                    <td>{% if degree.createdAt %}{{ degree.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                    <td>{% if degree.modifiedAt %}{{ degree.modifiedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                    
+                    <td class="icons">
+                        <a href="{{ path('degree_show', { 'id': degree.id }) }}">
+                            <i class="fa fa-eye icon icon__show" aria-hidden="true"></i>
+                        </a>                        
+                        <a href="{{ path('degree_edit', { 'id': degree.id }) }}">
+                            <i class="fa fa-pencil-square-o icon icon__edit" aria-hidden="true"></i>
+                        </a>        
+                    </td>
+                    
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="button button__right">
+        <a href="{{ path('degree_new') }}" class="btn btn-primary">{{ "CREATE_A_NEW_DEGREE"|trans }}</a>
+    </div>
+
+    </div>
+</div>
+{% endblock %}
+

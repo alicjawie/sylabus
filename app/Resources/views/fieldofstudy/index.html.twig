@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="admin-main container">
+
+    <div class="jumbotron">
+
+          <h2 class="display-4">{{ "FIELD_OF_STUDY_LIST"|trans }}</h2>
+          <p class="lead">{{ "CHOOSE_THE_ACTION_YOU_WANT_TO_TAKE"|trans }}</p>
+          <hr class="my-4">
+
+            <div class="table-responsive">
+                <table class="admin-main__table table table-hover table-stripped">
+                    <thead class="admin-main__table-head thead-dark">
+                        <tr>
+                            <th>{{ "ID"|trans }}</th>
+                            <th>{{ "NAME"|trans }}</th>
+                            <th>{{ "MODE"|trans }}</th>
+                            <th>{{ "DEGREE"|trans }}</th>
+                            <th>{{ "YEAR"|trans }}</th>
+                            <th>{{ "LANGUAGE"|trans }}</th>
+                            <th>{{ "ACTIONS"|trans }}</th>
+                    </thead>
+                    <tbody class="admin-main__table-body">
+                    {% for fieldOfStudy in fieldOfStudies %}
+                        <tr>
+                            <td>
+                                <a href="{{ path('field-of-study_show', { 'id': fieldOfStudy.id }) }}">{{ fieldOfStudy.id }}</a>
+                            </td>
+                            <td>{{ fieldOfStudy.name }}</td>
+                            <td>{{ fieldOfStudy.mode|trans }}</td>
+                            <td>{{ fieldOfStudy.degree }}</td>
+                            <td>{{ fieldOfStudy.year }}</td>
+                            <td>{{ fieldOfStudy.language }}</td>
+                            
+                            <td class="icons">
+                                <a href="{{ path('field-of-study_show', { 'id': fieldOfStudy.id }) }}" alt="show">
+                                    <i class="fa fa-eye icon icon__show" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="{{ path('field-of-study_edit', { 'id': fieldOfStudy.id }) }}" alt="edit">
+                                    <i class="fa fa-pencil-square-o icon icon__edit" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        
+                    {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+        
+            <div class="button button__right">
+                <a href="{{ path('field-of-study_new') }}" class="btn-base btn btn-primary" role="CREATE">{{ "ADD"|trans }}</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

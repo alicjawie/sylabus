@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="admin-main container">
+    <div class="jumbotron">
+        <h2 class="display-4">{{ "EXTRAFIELD"|trans }}</h2>
+        <hr class="my-4">
+        <div class="table-responsive">
+            <table class="admin-main__table-show table table-stripped">
+                <tbody>
+                    <tr>
+                        <th>{{ "TITLE"|trans }}</th>
+                        <td>{{ extraField.title }}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ "DESCRIPTION"|trans }}</th>
+                        <td>{{ extraField.description }}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ "ID"|trans }}</th>
+                        <td>{{ extraField.id }}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ "ENABLE"|trans }}</th>
+                        <td>{% if extraField.enabled %}Yes{% else %}No{% endif %}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ "CREATEDAT"trans }}</th>
+                        <td>{% if extraField.createdAt %}{{ extraField.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                    </tr>
+                    <tr>
+                        <th>{{ "MODIFIEDAT"|trans }}</th>
+                        <td>{% if extraField.modifiedAt %}{{ extraField.modifiedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button button__row-list">
+            <a class="btn btn-dark" href="{{ path('extrafield_index') }}">{{ "BACK_TO_THE_LIST"|trans }}</a>
+
+            <a class="btn btn-primary" href="{{ path('extrafield_edit', { 'id': extraField.id }) }}">{{ "EDIT"|trans }}</a>
+
+            {{ form_start(delete_form) }}
+                <input class="btn btn-danger" type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}
