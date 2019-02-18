@@ -1,0 +1,50 @@
+How to projekt
+
+http://localhost/sylabus/web/
+
+http://localhost/sylabus/web/field-of-study/
+
+http://cmder.net/
+
+https://www.apachefriends.org/pl/download.html
+
+https://getcomposer.org/download/
+
+TRZEBA MIEĆ ZAINSTALOWANE:
+	- git
+	- XAMPP, WAMP -> koniecznie z php7.1, lub postawić cały serwer, czyli instalacja php7.1, apache2, mysql, phpmyadmin
+	- composer
+	- jakiś edytor tekstowy np. sublime, netbeans, phpstorm, webstorm itp.
+
+
+1. Za pomocą gita klonujemy repo z tąd -> https://git.wmi.amu.edu.pl/s412235/syllabus_2.0.git czyli:
+	- git clone https://git.wmi.amu.edu.pl/s412235/syllabus_2.0.git <nazwa_folderu_jaka_chcemy_nie_obowiązkowe_do_podania>
+	- teraz poprosi nas o dane do logowania czyli s<nr_indexu> i wasze hasło do labsów
+
+
+2. Tworzymy bazę:
+	- wchodzimy w phpmyadmin localhost/phpmyadmin
+	- tworzymy bazę o nazwie którą potem podamy przy instalacji composera
+	- NIE ROBIŁEM JESZCZE FIXTUR -> więc najwyrzej podeślę bazę którą zaimportujecie
+
+
+3. Instalujemy composera czyli w konsoli:
+	- composer install
+	- composer będzie chciał od was parametry tutaj podam swoje:
+	
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: sylabus -> tutaj nazwa bazy z kroku 2
+    database_user: admin   -> wasza nazwa usera z bazy jeśli używacie xamppa to będzie to root
+    database_password: null-> wasze hasło z bazy jeśli xampp to będzie root lub null
+    mailer_transport: smtp -> zostawiacie tak jak tu
+    mailer_host: 127.0.0.1 -> zostawiacie domyślne
+    mailer_user: mail@mail.com -> wpisać jaki koliwek mail
+    mailer_password: qwerty123 -> jakie kolwiek hasło
+    secret: 3f060b1f5d379bf0ab1c9413046cab33b4c0b61f -> zostawiacie domyślne
+
+4. w konsli wpisać php bin/console d:s:u --force -> aktualizuje wam bazę
+
+5. chyba wszystko ale nie jestem pewny
